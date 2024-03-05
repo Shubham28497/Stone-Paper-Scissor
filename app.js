@@ -3,7 +3,8 @@ let compScore = 0;
 const choices = document.querySelectorAll(".choice");
 
 choices.forEach((choice) => {
-  choice.addEventListener("click",()=>{
-    console.log("choice was clicked")
+  choice.addEventListener("click", () => {
+    const choiceId= choice.getAttribute("id")
+    console.log("choice was clicked",choiceId);
   });
 });
