@@ -51,3 +51,16 @@ img {
 #comp-score {
   font-size: 4rem;
 }
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  border-radius: 1rem;
+  padding: 1rem;
+}
