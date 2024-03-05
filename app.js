@@ -1,5 +1,9 @@
 let userScore = 0;
 let compScore = 0;
+
+let userScorePara = document.querySelector("#user-score");
+let compScorePara = document.querySelector("#comp-score");
+
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
 
@@ -11,15 +15,19 @@ const genCompChoice = () => {
 
 const drawGame = () => {
   console.log("Game was draw");
-  msg.innerText = "Game was draw";
+  msg.innerText = "Game was draw, Play Again !";
   msg.style.backgroundColor = "#081b31";
 };
 const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
+    userScore++;
+    userScorePara.innerText = userScore;
     console.log("You win");
     msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
     msg.style.backgroundColor = "green";
   } else {
+    compScore++;
+    compScorePara.innerText = compScore;
     console.log("You lose");
     msg.innerText = `You Lost. ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "red";
