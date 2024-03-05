@@ -43,4 +43,11 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
 }
