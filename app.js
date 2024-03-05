@@ -11,16 +11,20 @@ const genCompChoice = () => {
 
 const drawGame = () => {
   console.log("Game was draw");
-    msg.innerText = "Game was draw";
+  msg.innerText = "Game was draw";
+    msg.style.backgroundColor = "#081b31";
 
 };
 const showWinner = (userWin) => {
   if (userWin) {
     console.log("You win");
     msg.innerText = "You win";
+    msg.style.backgroundColor = "green";
   } else {
     console.log("You lose");
-    msg.innerText="You Loose"
+    msg.innerText = "You Loose";
+    msg.style.backgroundColor = "red";
+
   }
 };
 
