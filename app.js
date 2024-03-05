@@ -9,7 +9,7 @@ const genCompChoice = () => {
 };
 
 const drawGame = () => {
-    console.log("Game was draw")
+  console.log("Game was draw");
 };
 
 const playGame = (userChoice) => {
@@ -21,6 +21,18 @@ const playGame = (userChoice) => {
   if (userChoice === compChoice) {
     //* draw game
     drawGame();
+  } else {
+    let userWin = true;
+    if (userChoice == "rock") {
+      //*scissor paper
+      userWin = compChoice === "paper" ? false : true;
+    } else if (userChoice == "paper") {
+      //* rock scissor
+      userWin = compChoice === "scissors" ? false : true;
+    } else {
+      //* paper rock
+      userWin = compChoice === "rock" ? false : true;
+    }
   }
 };
 
